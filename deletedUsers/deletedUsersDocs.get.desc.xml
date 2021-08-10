@@ -1,0 +1,5 @@
+<webscript>
+<shortname>Deleted Users Docs</shortname>
+<authentication>user</authentication>
+<url>/deletedUsersDocs?user={user?}</url>
+</webscript>
