@@ -1,0 +1,5 @@
+<webscript>
+<shortname>Retention Check</shortname>
+<authentication>user</authentication>
+<url>/retention?user={user?}</url>
+</webscript>
