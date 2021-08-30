@@ -1,0 +1,5 @@
+<webscript>
+<shortname>Deleted Users</shortname>
+<authentication>user</authentication>
+<url>/deletedUsers</url>
+</webscript>
