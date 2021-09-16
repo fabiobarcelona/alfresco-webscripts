@@ -16,7 +16,7 @@ function checkUser(user)
 	var s = {};
 	
 	s.page = {};
-	s.query = 'TYPE:"cm:person" AND =cm:userName:'+user;
+	s.query = 'TYPE:"cm:person" AND cm:userName:'+user;
 	s.language      = 'fts-alfresco';
 	s.page.maxItems = 1;
 	
