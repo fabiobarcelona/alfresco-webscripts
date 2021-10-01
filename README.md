@@ -9,3 +9,6 @@ Reverse version of the original deletedUsers webscript, this time it fetches all
 
 ## retentionCheck
 This webscript retrieves all the documents affected by the document retention policy of a given user. The username must be input in the URL as a parameter, otherwise it will show your current logged user in Alfresco
+
+## closureDate
+Closure Date is a Script (not a webscript) that changes the date of closure when triggered. First, it checks if the folder has the Closure Date aspect, then, if the description of that folder is an integer, it changes the closure date property to today's date + the description number in years.
