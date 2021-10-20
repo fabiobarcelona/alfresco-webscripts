@@ -1,0 +1,16 @@
+<webscript>
+<shortname>Second Parent</shortname>
+ <description>Set a second parent folder for a child folder</description>
+<authentication>user</authentication>
+<url>/secondParent</url>
+ <args>
+	<arg>
+		<name>ParentRef</name>
+		<description>nodeRef to the parent node to be updated</description>
+	</arg>
+	<arg>
+		<name>ChildRef</name>
+		<description>nodeRef to the child node to be updated</description>
+	</arg>
+  </args>
+</webscript>
