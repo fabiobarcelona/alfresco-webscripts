@@ -12,3 +12,6 @@ This webscript retrieves all the documents affected by the document retention po
 
 ## closureDate
 Closure Date is a Script (not a webscript) that changes the date of closure when triggered. First, it checks if the folder has the Closure Date aspect, then, if the description of that folder is an integer, it changes the closure date property to today's date + the description number in years.
+
+## secondParent
+Second Parent webscript allows you to add a node (folder or document) as a child of another node (parent), since Alfresco allows multiple parents for one node, you will see the child is referenced in multiple places, but only exists in one place, it's a better alternative for shortcuts.
