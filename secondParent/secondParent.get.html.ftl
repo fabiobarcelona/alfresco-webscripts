@@ -14,29 +14,31 @@
 
 	<body>
 	<script>
-		function main()
+		function main(mode)
 		{
 			var parentRef = document.getElementById('ParentRef').value;
 			var childRef = document.getElementById('ChildRef').value;
 			
-			window.location = 'http://sharedox.prod.oami.eu/alfresco/wcs/secondParent?ParentRef='+parentRef+'&ChildRef='+childRef
+			window.location = 'http://test-sharedox.test.oami.eu/alfresco/wcs/secondParent?ParentRef='+parentRef+'&ChildRef='+childRef+'&mode='+mode
 		}
 		</script>
 		<main>
 			<div class="container text-center" style="margin-top:20vh">
 				<div class="row">
 					<div class="col-6">
-						<h1 class="mt-5">New Parent NodeRef</h1>
-						<input type="text" id="ParentRef" class="inputTag mt-3" placeholder="workspace://SpacesStore/..." size="50">
+						<h1 class="mt-5">Parent NodeRef</h1>
+						<input type="text" id="ParentRef" class="inputTag mt-3" placeholder="workspace://SpacesStore/..." size="55">
 					</div>
 
 					<div class="col-6">
-						<h1 class="mt-5">New child NodeRef</h1>
-						<input type="text" id="ChildRef" class="inputTag mt-3" placeholder="workspace://SpacesStore/..." size="50">
+						<h1 class="mt-5">Child NodeRef</h1>
+						<input type="text" id="ChildRef" class="inputTag mt-3" placeholder="workspace://SpacesStore/..." size="55">
 					</div>
 				</div>
 				
-				<button class="btn btn-success btn-lg" style="margin-top: 5rem !important;" onclick="main()" id="btnSubmit">Set second parent</button>
+				<button class="btn btn-success btn-lg" style="margin-top: 5rem !important;" onclick="main(0)" id="btnSubmit">Set second parent</button>
+				<br/>
+				<button class="btn btn-danger btn-lg mt-3" onclick="main(1)">Remove Child Association</button>
 				
 				<h3 class="mt-3" > ${msg} </h3>
 			</div>

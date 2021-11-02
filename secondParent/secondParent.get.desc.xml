@@ -12,5 +12,9 @@
 		<name>ChildRef</name>
 		<description>nodeRef to the child node to be updated</description>
 	</arg>
+	<arg>
+		<name>mode</name>
+		<description>Operation mode: 0 = Set Second Parent; 1 = Remove Child Association</description>
+	</arg>
   </args>
 </webscript>
